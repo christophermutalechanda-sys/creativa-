@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Creativa Digital Studio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&display=swap">
+<style>
+:root{--bg:#0a0a0a;--surface:#141414;--line:#2a2a2a;--ink:#f2f2f2;--silver:#c0c0c0;--gold:#d4af37;--gold2:#f3d77a;color-scheme:dark;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a0a0a;--surface:#141414;--line:#2a2a2a;--ink:#f2f2f2;--silver:#c0c0c0;--gold:#d4af37;--gold2:#f3d77a}}
+:root[data-theme="dark"]{--bg:#0a0a0a;--surface:#141414;--line:#2a2a2a;--ink:#f2f2f2;--silver:#c0c0c0;--gold:#d4af37;--gold2:#f3d77a}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 Inter,system-ui,sans-serif}
+h1,h2,h3{font-family:"Space Grotesk",system-ui,sans-serif;margin:0;line-height:1.08}
+a{color:inherit}
+.wrap{max-width:1000px;margin:0 auto;padding:0 22px}
+.gold{background:linear-gradient(90deg,var(--gold),var(--gold2),var(--gold));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--gold)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;border-bottom:1px solid var(--line)}
+nav b{font:700 20px "Space Grotesk",sans-serif;letter-spacing:.04em}
+nav b span{color:var(--silver);font-weight:500}
+.btn{display:inline-block;border-radius:999px;padding:14px 28px;font:600 16px Inter,system-ui,sans-serif;text-decoration:none;border:2px solid var(--gold)}
+.fill{background:var(--gold);color:#0a0a0a}
+.ghost{color:var(--silver);border-color:var(--silver)}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--gold2);outline-offset:3px}
+.hero{padding:72px 0 64px}
+.hero h1{font-size:clamp(44px,10vw,92px)}
+.hero p{color:var(--silver);font-size:20px;max-width:52ch;margin:22px 0 32px}
+.cta{display:flex;flex-wrap:wrap;gap:14px}
+h2{font-size:clamp(30px,6vw,44px);margin-bottom:28px}
+section{padding:56px 0;border-top:1px solid var(--line)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px}
+.card i{font:700 14px "Space Grotesk",sans-serif;color:var(--gold);font-style:normal;letter-spacing:.1em}
+.card h3{font-size:24px;margin:10px 0 8px;color:var(--ink)}
+.card p{margin:0;color:var(--silver);font-size:16px}
+.steps{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.steps div{border-top:3px solid var(--silver);padding-top:14px}
+.steps b{font:700 22px "Space Grotesk",sans-serif;color:var(--gold)}
+.steps p{margin:6px 0 0;color:var(--silver)}
+.contact p{color:var(--silver);max-width:50ch;margin:0 0 24px}
+.info{margin-top:28px;color:var(--silver);font-size:16px}
+.info a{color:var(--gold2)}
+.about p{color:var(--silver);max-width:62ch;margin:0 0 18px}.about p b{color:var(--ink)}
+footer{padding:28px 0 36px;border-top:1px solid var(--line);color:var(--silver);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><b>CREATIVA <span>DIGITAL STUDIO</span></b><a class="btn fill" href="#contact" style="padding:10px 20px;font-size:15px">Contact</a></nav>
+
+<header class="hero">
+<h1 class="gold">Imagine. Create. Develop.</h1>
+<p>We build websites, logos and brands for businesses that want to stand out and be found online.</p>
+<div class="cta">
+<a class="btn fill" href="https://wa.me/260762251763?text=Hello%20Creativa%2C%20I%E2%80%99d%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener">Chat on WhatsApp</a>
+<a class="btn ghost" href="#about">About us</a>
+</div>
+</header>
+
+<section id="about" class="about">
+<h2>About Creativa</h2>
+<p><b>Creativa Digital Studio</b> is a creative studio in Zambia that helps businesses and individuals build a strong presence online. We design and build websites, logos, branding and posters, and we create digital tools made around how you work.</p>
+<p>Our name comes from <b>creativity</b>, and our tagline is how we work. We <b>imagine</b> your idea with you, <b>create</b> the design, and <b>develop</b> it into something real that your customers can use.</p>
+<p>Everything we make is clean, modern and built to look good on a phone, because that is where most of your customers will see it.</p>
+</section>
+
+<section id="services">
+<h2>What we do</h2>
+<div class="grid">
+<div class="card"><i>01</i><h3>Website development</h3><p>Fast, professional websites that look great on every phone.</p></div>
+<div class="card"><i>02</i><h3>Logo and graphic design</h3><p>A clean, memorable logo that people recognise straight away.</p></div>
+<div class="card"><i>03</i><h3>Business branding</h3><p>Colors, style and a look that make your business feel trusted.</p></div>
+<div class="card"><i>04</i><h3>Promotional posters</h3><p>Eye-catching posters for social media and print.</p></div>
+<div class="card"><i>05</i><h3>Custom digital solutions</h3><p>Order forms, booking pages and tools built around how you work.</p></div>
+</div>
+</section>
+
+<section>
+<h2>How it works</h2>
+<div class="steps">
+<div><b>1. Tell us</b><p>Share your idea, your business and what you need.</p></div>
+<div><b>2. We design</b><p>We create a draft for you to see and comment on.</p></div>
+<div><b>3. You launch</b><p>We finish, publish and help you share it with customers.</p></div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Let’s build yours</h2>
+<p>Send us a message and we’ll reply with ideas and a price for your project.</p>
+<div class="cta">
+<a class="btn fill" href="https://wa.me/260762251763" target="_blank" rel="noopener">WhatsApp us</a>
+<a class="btn ghost" href="tel:+260762251763">Call +260 762 251 763</a>
+</div>
+<div class="info">Email: <a href="mailto:christophermutalechanda@gmail.com">christophermutalechanda@gmail.com</a></div>
+</section>
+</div>
+<footer><div class="wrap">© 2026 Creativa Digital Studio · Imagine. Create. Develop.</div></footer>
+</body>
+</html>
